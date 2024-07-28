@@ -1,0 +1,26 @@
+{
+  "testMsigPhoneBookApp": {
+    "contact": {
+      "home": {
+        "title": "Contacts",
+        "refreshListLabel": "リストの更新",
+        "createLabel": "Contact の作成",
+        "createOrEditLabel": "Contactの作成または編集",
+        "notFound": "Contacts が見つかりません。"
+      },
+      "created": "新しい Contact がID {{ param }} で作成されました。",
+      "updated": "ID {{ param }} の Contact が更新されました。",
+      "deleted": "ID {{ param }} の Contact が削除されました。",
+      "delete": {
+        "question": "Contact {{ id }}を削除してもよろしいですか？"
+      },
+      "detail": {
+        "title": "Contact"
+      },
+      "id": "ID",
+      "name": "Name",
+      "number": "Number",
+      "contactperson": "Contactperson"
+    }
+  }
+}

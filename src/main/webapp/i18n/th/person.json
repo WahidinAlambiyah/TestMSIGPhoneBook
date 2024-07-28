@@ -1,0 +1,25 @@
+{
+  "testMsigPhoneBookApp": {
+    "person": {
+      "home": {
+        "title": "People",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "สร้าง Person",
+        "createOrEditLabel": "สร้างหรือแก้ไข Person",
+        "notFound": "No People found"
+      },
+      "created": "Person ถูกสร้างด้วย {{ param }}",
+      "updated": "Person ถูกแก้ไขด้วย {{ param }}",
+      "deleted": "Person ถูกลบด้วย {{ param }}",
+      "delete": {
+        "question": "คุณต้องการที่จะลบ Person {{ id }}?"
+      },
+      "detail": {
+        "title": "Person"
+      },
+      "id": "ID",
+      "name": "Name",
+      "contactperson": "Contactperson"
+    }
+  }
+}

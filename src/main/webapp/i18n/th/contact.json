@@ -1,0 +1,26 @@
+{
+  "testMsigPhoneBookApp": {
+    "contact": {
+      "home": {
+        "title": "Contacts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "สร้าง Contact",
+        "createOrEditLabel": "สร้างหรือแก้ไข Contact",
+        "notFound": "No Contacts found"
+      },
+      "created": "Contact ถูกสร้างด้วย {{ param }}",
+      "updated": "Contact ถูกแก้ไขด้วย {{ param }}",
+      "deleted": "Contact ถูกลบด้วย {{ param }}",
+      "delete": {
+        "question": "คุณต้องการที่จะลบ Contact {{ id }}?"
+      },
+      "detail": {
+        "title": "Contact"
+      },
+      "id": "ID",
+      "name": "Name",
+      "number": "Number",
+      "contactperson": "Contactperson"
+    }
+  }
+}

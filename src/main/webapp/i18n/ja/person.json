@@ -1,0 +1,25 @@
+{
+  "testMsigPhoneBookApp": {
+    "person": {
+      "home": {
+        "title": "People",
+        "refreshListLabel": "リストの更新",
+        "createLabel": "Person の作成",
+        "createOrEditLabel": "Personの作成または編集",
+        "notFound": "People が見つかりません。"
+      },
+      "created": "新しい Person がID {{ param }} で作成されました。",
+      "updated": "ID {{ param }} の Person が更新されました。",
+      "deleted": "ID {{ param }} の Person が削除されました。",
+      "delete": {
+        "question": "Person {{ id }}を削除してもよろしいですか？"
+      },
+      "detail": {
+        "title": "Person"
+      },
+      "id": "ID",
+      "name": "Name",
+      "contactperson": "Contactperson"
+    }
+  }
+}

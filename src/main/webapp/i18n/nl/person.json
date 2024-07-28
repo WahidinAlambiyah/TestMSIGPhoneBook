@@ -1,0 +1,25 @@
+{
+  "testMsigPhoneBookApp": {
+    "person": {
+      "home": {
+        "title": "People",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Person",
+        "createOrEditLabel": "Maak of wijzig een Person",
+        "notFound": "No People found"
+      },
+      "created": "A new Person is created with identifier {{ param }}",
+      "updated": "A Person is updated with identifier {{ param }}",
+      "deleted": "A Person is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Person {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Person"
+      },
+      "id": "ID",
+      "name": "Name",
+      "contactperson": "Contactperson"
+    }
+  }
+}

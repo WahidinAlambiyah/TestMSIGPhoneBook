@@ -1,0 +1,26 @@
+{
+  "testMsigPhoneBookApp": {
+    "contact": {
+      "home": {
+        "title": "Contacts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Buat Contact baru",
+        "createOrEditLabel": "Buat atau edit Contact",
+        "notFound": "No Contacts found"
+      },
+      "created": "Contact dengan id {{ param }} telah dibuat",
+      "updated": "Contact dengan id {{ param }} telah diperbaharui",
+      "deleted": "Contact dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Contact {{ id }}?"
+      },
+      "detail": {
+        "title": "Contact"
+      },
+      "id": "ID",
+      "name": "Name",
+      "number": "Number",
+      "contactperson": "Contactperson"
+    }
+  }
+}

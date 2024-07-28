@@ -1,0 +1,25 @@
+{
+  "testMsigPhoneBookApp": {
+    "person": {
+      "home": {
+        "title": "People",
+        "refreshListLabel": "Listeyi yenile",
+        "createLabel": "Yeni Person ekle",
+        "createOrEditLabel": "Yeni Person ekle veya guncelle",
+        "notFound": "People kaydi bulunamadi"
+      },
+      "created": "{{ param }} ID ile bir Person eklendi",
+      "updated": "{{ param }} nolu Person guncellendi",
+      "deleted": "{{ param }} nolu Person silindi",
+      "delete": {
+        "question": "{{ id }} nolu Person silinecek. Devem etmek istiyor musunuz?"
+      },
+      "detail": {
+        "title": "Person"
+      },
+      "id": "ID",
+      "name": "Name",
+      "contactperson": "Contactperson"
+    }
+  }
+}

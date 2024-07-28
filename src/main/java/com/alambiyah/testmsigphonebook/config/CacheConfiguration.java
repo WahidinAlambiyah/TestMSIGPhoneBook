@@ -83,6 +83,9 @@ public class CacheConfiguration {
             createCache(cm, com.alambiyah.testmsigphonebook.domain.User.class.getName(), jcacheConfiguration);
             createCache(cm, com.alambiyah.testmsigphonebook.domain.Authority.class.getName(), jcacheConfiguration);
             createCache(cm, com.alambiyah.testmsigphonebook.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            createCache(cm, com.alambiyah.testmsigphonebook.domain.Person.class.getName(), jcacheConfiguration);
+            createCache(cm, com.alambiyah.testmsigphonebook.domain.Person.class.getName() + ".contactpeople", jcacheConfiguration);
+            createCache(cm, com.alambiyah.testmsigphonebook.domain.Contact.class.getName(), jcacheConfiguration);
             // jhipster-needle-redis-add-entry
         };
     }
