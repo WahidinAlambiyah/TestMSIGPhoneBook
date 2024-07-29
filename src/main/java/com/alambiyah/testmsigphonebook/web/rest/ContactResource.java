@@ -1,11 +1,13 @@
 package com.alambiyah.testmsigphonebook.web.rest;
 
+import com.alambiyah.testmsigphonebook.domain.Contact;
 import com.alambiyah.testmsigphonebook.repository.ContactRepository;
 import com.alambiyah.testmsigphonebook.service.ContactQueryService;
 import com.alambiyah.testmsigphonebook.service.ContactService;
 import com.alambiyah.testmsigphonebook.service.criteria.ContactCriteria;
 import com.alambiyah.testmsigphonebook.service.dto.ContactDTO;
 import com.alambiyah.testmsigphonebook.web.rest.errors.BadRequestAlertException;
+import com.alambiyah.testmsigphonebook.web.rest.errors.PhoneNumberAlreadyUsedException;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 import java.net.URI;
@@ -64,6 +66,10 @@ public class ContactResource {
         log.debug("REST request to save Contact : {}", contactDTO);
         if (contactDTO.getId() != null) {
             throw new BadRequestAlertException("A new contact cannot already have an ID", ENTITY_NAME, "idexists");
+        }
+        Optional<Contact> existingContact = contactRepository.findOneByNumberIgnoreCase(contactDTO.getNumber());
+        if (existingContact.isPresent()) {
+            throw new PhoneNumberAlreadyUsedException();
         }
         contactDTO = contactService.save(contactDTO);
         return ResponseEntity.created(new URI("/api/contacts/" + contactDTO.getId()))
